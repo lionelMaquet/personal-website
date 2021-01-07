@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 12pt;
+  font-family: Titillium Web;
+}
+
+/*WELCOME SECTION*/
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+  background-color: rgb(30,30,30)
+}
+
+.welcome-info {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-info .center {
+  color: white;
+  font-size: 1.9vw;
+
+  text-align: center;
+  color: white;
+  width: 50vw;
+
+}
+
+.red {
+  color: #FBC619;
+}
+
+.welcome-info .center a {
+  font-size: 1.1vw;
+  border: solid 1px;
+  border-color: #FBC619;
+  padding: 5px 30px;
+  color: white;
+  border-radius: 5%;
+  transition: all 0.5s linear ;
+  background-color : rgb(30,30,30)
+
+}
+
+@media only screen and (min-width: 1280px) {
+  .welcome-info .center a:hover {
+    cursor: pointer;
+    color: white;
+    font-size: 1.2vw;
+  }
+}
+
+.arrow-down {
+  width: 3%;
+  position: relative;
+  top: 0px;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.welcome-info .center a:hover ~ .arrow-down {
+  top: 10px;
+  opacity: 1;
+}
+
+@media only screen and (max-width : 730px) {
+
+  .welcome-info .center {
+    width: 100%;
+    font-size: 4vw
+  }
+
+  .welcome-info .center a {
+    font-size: 2.5vw;
+  }
+
+}
+
